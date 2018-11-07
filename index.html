@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Irrelevant</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta name="HandheldFriendly" content="true" />
+        <link rel="stylesheet" href="static/css/separate-css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" href="static/css/separate-css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="static/css/separate-css/swiper.min.css" />
+        <link rel="stylesheet" href="static/css/separate-css/linear-icons.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons%7CPoppins:300,300i,400,400i,600,600i%7CPlayfair+Display:400i" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" />
+        <link rel="stylesheet" href="static/css/main.css" />
+        <!-- ICONS-->
+        <link rel="apple-touch-icon" sizes="57x57" href="static/img/content/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="static/img/content/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="static/img/content/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="static/img/content/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="static/img/content/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="static/img/content/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="static/img/content/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="static/img/content/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="static/img/content/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="static/img/content/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="static/img/content/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="static/img/content/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="static/img/content/favicon-16x16.png" />
+        <link rel="manifest" href="static/img/content/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="static/img/content/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" type="image/x-icon" href="static/img/content/favicon.ico" />
+    </head>
+
+    <body>
+        <!-- PAGE PRELOADER -->
+        <div class="preloader">
+            <div class="preloader__curtain bg-light"></div>
+            <div class="preloader__wrapper-logo">
+                <div class="preloader__logo">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g fill="none" fill-rule="evenodd">
+                            <rect class="rect" width="100%" height="100%"></rect>
+                        </g>
+                    </svg>
+                    <div class="logo">
+                        <div class="logo__text">Irrelevant</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- - PAGE PRELOADER -->
+        <div class="page-wrapper">
+            <!-- PAGE HEADER -->
+            <header class="header site-header js-header-sticky header_light">
+                <div class="container-fluid">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <a class="logo" href="index.html">
+                                <div class="logo__text">Irrelevant</div>
+                            </a>
+                        </div>
+                        <div class="col-auto d-xl-block d-none">
+                            <ul class="menu">
+                                <li><a href="#">Home</a>
+                                </li>
+                                <li><a href="#">Portfolio</a>
+                                </li>
+                                <li><a href="#services">Services</a>
+                                </li>
+                                <li><a href="blog-list.html">Blog</a>
+                                </li>
+                                <li><a href="about.html">About</a>
+                                </li>
+                                <li><a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__overlay-menu-back d-xl-none js-submenu-back">keyboard_arrow_up</div>
+                        <div class="col-auto d-xl-none">
+                            <div class="burger js-burger">
+                                <div class="burger__line"></div>
+                                <div class="burger__line"></div>
+                                <div class="burger__line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper-overlay-menu d-xl-none">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <ul class="overlay-menu js-overlay-menu">
+                                    <li>
+                                        <a href="#">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">01</div><span>Home</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">02</div><span>Portfolio</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#services" onclick="document.querySelector('.burger').click();">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">03</div><span>Services</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-list.html">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">04</div><span>Blog</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">05</div><span>About</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">06</div><span>Contact</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- - PAGE HEADER -->
+            <main class="site-main">
+                <!-- section INTRO -->
+                <section class="section section-intro bg-dark" data-os-animation="data-os-animation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1>I'm <span class="highlight">Evan<span class="highlight__bg"></span></span> – Creative Developer <br>& Visual Designer</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section INTRO -->
+                <!-- section PORTFOLIO -->
+                <section class="section section_mb section-portfolio">
+                    <div class="container">
+                        <div class="section-portfolio__wrapper-item">
+                            <div class="row figure-portfolio justify-content-end figure-portfolio_horizontal figure-portfolio_right" data-os-animation="data-os-animation">
+                                <a class="figure-portfolio__link col col-lg-10" href="reveler-details.html">
+                                    <div class="figure-portfolio__wrapper-img overflow">
+                                        <div class="overflow__curtain bg-accent"></div>
+                                        <div class="overflow__content" id="reveler">
+                                            <img src="static/img/general/reveler-ipad.png" alt="Reveler.club" style="background: rgb(83,83,83);background: -moz-linear-gradient(-45deg, rgba(83,83,83,1) 0%, rgba(76,65,68,1) 23%, rgba(10,10,10,1) 100%);background: -webkit-linear-gradient(-45deg, rgba(83,83,83,1) 0%,rgba(76,65,68,1) 23%,rgba(10,10,10,1) 100%);background: linear-gradient(135deg, rgba(83,83,83,1) 0%,rgba(76,65,68,1) 23%,rgba(10,10,10,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#535353', endColorstr='#0a0a0a',GradientType=1 );"/>
+                                            <img src="static/img/general/reveler-ipad-desat.png" alt="Reveler.club" style="position: absolute; top: 0; left: 0;background: rgb(83,83,83);background: -moz-linear-gradient(-45deg, rgba(83,83,83,1) 0%, rgba(76,65,68,1) 23%, rgba(10,10,10,1) 100%);background: -webkit-linear-gradient(-45deg, rgba(83,83,83,1) 0%,rgba(76,65,68,1) 23%,rgba(10,10,10,1) 100%);background: linear-gradient(135deg, rgba(83,83,83,1) 0%,rgba(76,65,68,1) 23%,rgba(10,10,10,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#535353', endColorstr='#0a0a0a',GradientType=1 ); transition: opacity 0.3s ease;" />
+                                            <script>
+                                                document.querySelector("#reveler").addEventListener("mouseover", function() {
+                                                    $(this).children("img:nth-child(2)").css("opacity", "0");
+                                                });
+                                                document.querySelector("#reveler").addEventListener("mouseleave", function() {
+                                                    $(this).children("img:nth-child(2)").css("opacity", "1");
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio__info">Development</div>
+                                    <header class="figure-portfolio__header">
+                                        <div class="figure-portfolio__headline"></div>
+                                        <h2>Revel</h2>
+                                    </header>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-portfolio__wrapper-item">
+                            <div class="row figure-portfolio justify-content-start figure-portfolio_vertical figure-portfolio_left" data-os-animation="data-os-animation">
+                                <a class="figure-portfolio__link col col-lg-5" href="faunesse-details.html">
+                                    <div class="figure-portfolio__wrapper-img overflow">
+                                        <div class="overflow__curtain bg-accent"></div>
+                                        <div class="overflow__content" id="faunesse">
+                                            <img src="static/img/general/faunesse-frame.png" alt="La Faunesse Rouge" />
+                                            <img src="static/img/general/faunesse-frame-desat.png" alt="La Faunesse Rouge" style="position: absolute; top: 0; left: 0; transition: opacity 0.3s ease;"/>
+                                            <script>
+                                                document.querySelector("#faunesse").addEventListener("mouseover", function() {
+                                                    $(this).children("img:nth-child(2)").css("opacity", "0");
+                                                });
+                                                document.querySelector("#faunesse").addEventListener("mouseleave", function() {
+                                                    $(this).children("img:nth-child(2)").css("opacity", "1");
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio__info">Illustration</div>
+                                    <header class="figure-portfolio__header">
+                                        <div class="figure-portfolio__headline"></div>
+                                        <h2>La Faunesse Rouge</h2>
+                                    </header>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="section-portfolio__wrapper-item">
+                            <div class="row figure-portfolio justify-content-end figure-portfolio_vertical figure-portfolio_right" data-os-animation="data-os-animation">
+                                <a class="figure-portfolio__link col col-lg-5" href="portfolio-details-2-light.html">
+                                    <div class="figure-portfolio__wrapper-img overflow">
+                                        <div class="overflow__curtain bg-accent"></div>
+                                        <div class="overflow__content">
+                                            <img src="static/img/assets/sectionPortfolio/item-3.jpg" alt="Wireless Euphoria" />
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio__info">Street</div>
+                                    <header class="figure-portfolio__header">
+                                        <div class="figure-portfolio__headline"></div>
+                                        <h2>Wireless Euphoria</h2>
+                                    </header>
+                                </a>
+                            </div>
+                        </div> -->
+                        <div class="section-portfolio__wrapper-item">
+                            <div class="row figure-portfolio justify-content-start figure-portfolio_horizontal figure-portfolio_left" data-os-animation="data-os-animation">
+                                <a class="figure-portfolio__link col col-lg-10" href="for-drivers-details.html">
+                                    <div class="figure-portfolio__wrapper-img overflow">
+                                        <div class="overflow__curtain bg-accent"></div>
+                                        <div class="overflow__content">
+                                            <img class="gif" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6e333672189053.5bdf549967637.gif" alt="Codify's Got Your Back"/>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio__info">Animation</div>
+                                    <header class="figure-portfolio__header">
+                                        <div class="figure-portfolio__headline"></div>
+                                        <h2>We'll Get You There</h2>
+                                    </header>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="section-portfolio__wrapper-button text-center"><a class="button" href="portfolio.html"><span>View Portfolio</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section PORTFOLIO -->
+                <!-- section SERVICES -->
+                <section class="section section-services">
+                    <header class="section-header container" data-os-animation="data-os-animation">
+                        <div class="row">
+                            <div class="col">
+                                <div class="section-header__label">
+                                    <div class="section-header__square"></div><span>What I Do</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h2>I'm a creative director and developer-designer who builds brands, content, programs, products, funnels, design systems, animations, websites, apps, and more.</h2>
+                            </div>
+                        </div>
+                    </header>
+<!--               SWIPER                -->
+                    <div class="swiper-container slider slider-services js-slider-services" id="services">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="figure-service" href="service-details.html">
+                                    <header class="figure-service__header">
+                                        <div class="figure-service__headline"></div>
+                                        <h3>Web Development</h3>
+                                        <p>Jump-start your product or amp up your users' web experience.</p>
+                                    </header>
+                                    <div class="figure-service__icon">
+                                        <div class="lnr lnr-code"></div>
+                                        <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-134.000000, -98.000000)">
+                                                    <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="figure-service__number">01</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="figure-service" href="service-details.html">
+                                    <header class="figure-service__header">
+                                        <div class="figure-service__headline"></div>
+                                        <h3>Visual Design</h3>
+                                        <p>Engage your users and audience with a look and feel they won't forget.</p>
+                                    </header>
+                                    <div class="figure-service__icon">
+                                        <div class="lnr lnr-leaf"></div>
+                                        <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-134.000000, -98.000000)">
+                                                    <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="figure-service__number">02</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="figure-service" href="service-details.html">
+                                    <header class="figure-service__header">
+                                        <div class="figure-service__headline"></div>
+                                        <h3>Illustration</h3>
+                                        <p>Tell your story, leverage your business' narrative, or bring your ideas to life.</p>
+                                    </header>
+                                    <div class="figure-service__icon">
+                                        <div class="lnr lnr-highlight"></div>
+                                        <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-134.000000, -98.000000)">
+                                                    <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="figure-service__number">03</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="figure-service" href="service-details.html">
+                                    <header class="figure-service__header">
+                                        <div class="figure-service__headline"></div>
+                                        <h3>Branding</h3>
+                                        <p>Get your product, your business, and your team the attention they deserve.</p>
+                                    </header>
+                                    <div class="figure-service__icon">
+                                        <div class="lnr lnr-apartment"></div>
+                                        <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-134.000000, -98.000000)">
+                                                    <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="figure-service__number">04</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="figure-service" href="service-details.html">
+                                    <header class="figure-service__header">
+                                        <div class="figure-service__headline"></div>
+                                        <h3>Animation & Storyboards</h3>
+                                        <p>Distill, explain, and communicate complex value propositions or narratives.</p>
+                                    </header>
+                                    <div class="figure-service__icon">
+                                        <div class="lnr lnr-bullhorn"></div>
+                                        <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-134.000000, -98.000000)">
+                                                    <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="figure-service__number">05</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="figure-service" href="service-details.html">
+                                    <header class="figure-service__header">
+                                        <div class="figure-service__headline"></div>
+                                        <h3>Program Design</h3>
+                                        <p>Build new funnels, training programs, design systems, or integrations to bring it all home.</p>
+                                    </header>
+                                    <div class="figure-service__icon">
+                                        <div class="lnr lnr-smartphone"></div>
+                                        <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-134.000000, -98.000000)">
+                                                    <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="figure-service__number">06</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+<!--               END SWIPER                    -->
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <div class="slider__arrows">
+                                    <div class="slider__arrow js-slider-services__arrow-left">keyboard_arrow_left</div>
+                                    <div class="slider__arrow js-slider-services__arrow-right">keyboard_arrow_right</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="slider__progress">
+                                    <div class="swiper-container slider__counter slider__counter_current js-slider-services-counter-current">
+                                        <div class="swiper-wrapper"></div>
+                                    </div>
+                                    <div class="slider__progressbar js-slider-services-progress">
+                                        <div class="slider__progressbar-fill"></div>
+                                    </div>
+                                    <div class="slider__counter slider__counter_total js-slider-services-counter-total">00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section SERVICES -->
+                <!-- section TESTIMONIALS -->
+                <section class="section section_mt section-testimonials">
+                    <header class="section-header container" data-os-animation="data-os-animation">
+                        <div class="row">
+                            <div class="col">
+                                <div class="section-header__label">
+                                    <div class="section-header__square"></div><span>Testimonials</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h2>I always deliver, on-time, in-full, and with absolute transparency. I work with you to define and stress-test your vision, and execute to spec.</h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container-fluid">
+                        <div class="bg-dark">
+                            <div class="container slider slider-testimonials">
+                                <div class="row justify-content-between">
+                                    <div class="col-lg-10 order-lg-2">
+                                        <div class="swiper-container js-slider-testimonials">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img class="slider-testimonials__author-avatar" src="static/img/assets/avatars/avatar-1.jpg" alt="" />
+                                                    <p class="slider-testimonials__text">Evan Winston has proven himself to be a pillar amongst the coding community by time and time again turning to all those around him and provoking their absolute greatness. With a sincerity in his heart and a will as strong as his desire to help others, he has stood by me and my peers to answer any question we've had for him, each time inciting the Promethean Fire in us all by finishing that thought with a question that shapes our growth. I am beyond excited to have met Evan in my life, and am even more excited to see the potential he unlocks in the world around him. Be it through his breathtaking art, prized leadership, or true sincerity as a human being, every foot print Evan leaves behind is one to behold.</p>
+                                                    <div class="slider-testimonials__author">
+                                                        <div class="slider-testimonials__author-line"></div>
+                                                        <div class="slider-testimonials__author-name">Zachary "Holland" Ledoux</div>
+                                                        <div class="slider-testimonials__author-subline">Mentee | Weave iQ</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="slider-testimonials__author-avatar" src="static/img/assets/avatars/avatar-4.jpg" alt="" />
+                                                    <p class="slider-testimonials__text">Evan is truly a resource and mentor that no developer should be without. He is truly articulate in his coding ability and his strictness for quality. This helped me look at the finer details in my code and view things in different lights. Evan is extremely helpful as he will take time out of his busy schedule to help any student in need which is extremely considerate as time is a precious commodity. I would recommend Evan for any of your coding needs...</p>
+                                                    <div class="slider-testimonials__author">
+                                                        <div class="slider-testimonials__author-line"></div>
+                                                        <div class="slider-testimonials__author-name">Matthew Hernandez</div>
+                                                        <div class="slider-testimonials__author-subline">Developer | Audioist</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="slider-testimonials__author-avatar" src="static/img/assets/avatars/avatar-2.jpg" alt="" />
+                                                    <p class="slider-testimonials__text">Evan is fantastic to work with. Very knowledgeable and willing to provide guidance and options. Would definitely work with him again.</p>
+                                                    <div class="slider-testimonials__author">
+                                                        <div class="slider-testimonials__author-line"></div>
+                                                        <div class="slider-testimonials__author-name">Leslie Martinez</div>
+                                                        <div class="slider-testimonials__author-subline">Client | National Journal</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="slider-testimonials__author-avatar" src="static/img/assets/avatars/avatar-3.jpg" alt="" />
+                                                    <p class="slider-testimonials__text">I have worked with Evan twice over the past couple of years, to design illustrative elements for a charity event I produce for the Dallas Bar Association. On both occasions, Evan instantly grasped the concept we were looking for, and quickly and accurately designed illustrations that perfectly complemented the artwork that had already been created. Evan is professional, thorough, and has great attention to detail. I highly recommend his work.</p>
+                                                    <div class="slider-testimonials__author">
+                                                        <div class="slider-testimonials__author-line"></div>
+                                                        <div class="slider-testimonials__author-name">Tom Mighell</div>
+                                                        <div class="slider-testimonials__author-subline">Client | Dallas Bar Association</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 order-lg-1">
+                                        <div class="slider__controls">
+                                            <div class="slider__arrow slider-testimonials__arrow js-slider-testimonials__arrow-prev">keyboard_arrow_up</div>
+                                            <div class="slider__dots js-slider-testimonials__dots">
+                                                <div class="slider__dot slider__dot_active"></div>
+                                                <div class="slider__dot"></div>
+                                                <div class="slider__dot"></div>
+                                                <div class="slider__dot"></div>
+                                            </div>
+                                            <div class="slider__arrow slider-testimonials__arrow js-slider-testimonials__arrow-next">keyboard_arrow_down</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 align-self-end order-lg-3 d-none d-lg-block">
+                                        <div class="slider__counter-big">
+                                            <div class="swiper-container slider__counter-big-current slider-testimonials__counter-big-current js-slider-testimonials-counter-current">
+                                                <div class="swiper-wrapper"></div>
+                                            </div>
+                                            <div class="slider__counter-big-total js-slider-testimonials-counter-total"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section TESTIMONIALS -->
+                <!-- section CTA -->
+                <div class="container-fluid">
+                    <section class="section section-cta section_pt section_pb">
+                        <div class="jarallax section-cta__bg col-lg-6" data-jarallax="true" data-speed="0.8" data-img-size="cover" data-img-position="30% 50%">
+                            <img class="jarallax-img of-cover" src="static/img/general/encouragement-bear.jpg" alt="" />
+                        </div>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 offset-lg-6">
+                                    <header class="section-cta__header">
+                                        <h2>Have a project that needs doing?</h2>
+                                        <h4>Quit procrastinating.</h4>
+                                    </header>
+                                    <div class="section-cta__wrapper-button"><a class="button button_accent" href="contact.html"><span>Get a FREE Quote</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-cta__decor-el-1 d-none d-lg-block"></div>
+                        <div class="section-cta__decor-el-2 d-none d-lg-block"></div>
+                        <div class="overlay overlay_white d-lg-none"></div>
+                    </section>
+                </div>
+                <!-- - section CTA -->
+                <!-- section LATEST POSTS -->
+                <section class="section section_mt section-news">
+                    <header class="section-header container" data-os-animation="data-os-animation">
+                        <div class="row">
+                            <div class="col">
+                                <div class="section-header__label">
+                                    <div class="section-header__square"></div><span>Latest Thoughts</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h2>We all have something to say every now and again.</a></h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container-fluid">
+                        <div class="section-news__wrapper-post">
+                            <a class="figure-post" href="impostor-syndrome-post.html">
+                                <img class="figure-post__wrapper-img of-cover" src="static/img/content/posts/impostor-syndrome.png" alt="" style="object-position: 50% 20%;"/>
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <time class="figure-post__date" datetime="2013-03-14T07:57:01+00:00">28 Jun 2018</time>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="figure-post__content">
+                                                <h3>Impostor Syndrome - Feeling Like a Fraud</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="figure-post__wrapper-button">
+                                                <div class="button-square">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <rect class="rect" width="100%" height="100%"></rect>
+                                                        </g>
+                                                    </svg><span>arrow_forward</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-news__wrapper-post">
+                            <a class="figure-post" href="why-html-css-js-post.html">
+                                <img class="figure-post__wrapper-img of-cover" src="static/img/content/posts/why-html-css-js.png" alt="" style="object-position: 50% 55%;"/>
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <time class="figure-post__date" datetime="2013-03-14T07:57:01+00:00">13 Jun 2018</time>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="figure-post__content">
+                                                <h3>Why HTML, CSS, & JavaScript?</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="figure-post__wrapper-button">
+                                                <div class="button-square">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <rect class="rect" width="100%" height="100%"></rect>
+                                                        </g>
+                                                    </svg><span>arrow_forward</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-news__wrapper-post">
+                            <a class="figure-post" href="five-myths-pt2-post.html">
+                                <img class="figure-post__wrapper-img of-cover" src="static/img/content/posts/five-myths-2.png" alt="" style="object-position: 50% 38%"/>
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <time class="figure-post__date" datetime="2013-03-14T07:57:01+00:00">7 Jun 2018</time>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="figure-post__content">
+                                                <h3>5 Myths About Coding Pt. 2</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="figure-post__wrapper-button">
+                                                <div class="button-square">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <rect class="rect" width="100%" height="100%"></rect>
+                                                        </g>
+                                                    </svg><span>arrow_forward</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-news__wrapper-post">
+                            <a class="figure-post" href="five-myths-post.html">
+                                <img class="figure-post__wrapper-img of-cover" src="static/img/content/posts/five-myths-1.png" alt="" style="object-position: 50% 30%"/>
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <time class="figure-post__date" datetime="2013-03-14T07:57:01+00:00">7 Jun 2018</time>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="figure-post__content">
+                                                <h3>5 Myths About Coding Pt. 1</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="figure-post__wrapper-button">
+                                                <div class="button-square">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <rect class="rect" width="100%" height="100%"></rect>
+                                                        </g>
+                                                    </svg><span>arrow_forward</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section LATEST POSTS -->
+                <!-- section CONTACT -->
+                <section class="section section-contact section_mt">
+                    <header class="section-header container" data-os-animation="data-os-animation">
+                        <div class="row">
+                            <div class="col">
+                                <div class="section-header__label">
+                                    <div class="section-header__square"></div><span>Contact Me</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h2>If you've got a project, I can help. Just write me below or drop me a line at <a href="#">evanw89@gmail.com</a>.</h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container-fluid">
+                        <div class="row no-gutters">
+                            <div class="col-lg-4">
+                                <div class="section-contact__wrapper-form">
+                                    <form class="form js-ajax-form" action="mail.php" method="POST" data-message-success="Thanks for your message! We will reply you as soon as possible." data-message-error="Something went wrong :( Please contact me directly on arrigo@sabbani.com">
+                                        <h3>Tell me about it</h3>
+                                        <div class="row form__row">
+                                            <div class="col form__col">
+                                                <label class="input-float js-input-float">
+                                                    <input class="input-float__input" type="text" name="visitor_name" required="required" data-msg="Please enter your name" /><span class="input-float__label">Your Name</span><span class="form__error"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row form__row">
+                                            <div class="col form__col">
+                                                <label class="input-float js-input-float">
+                                                    <input class="input-float__input" type="email" name="visitor_email" required="required" data-msg="Please enter a correct e-mail" /><span class="input-float__label">Your E-mail</span><span class="form__error"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row form__row">
+                                            <div class="col form__col">
+                                                <label class="input-float js-input-float">
+                                                    <textarea class="input-float__input input-float__input_textarea" name="visitor_msg"></textarea><span class="input-float__label">Your Message</span><span class="form__error"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row form__row text-right">
+                                            <div class="col form__col form__col_submit">
+                                                <button class="button button_accent" type="submit"><span>Send Message</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="gmap" id="js-gmap" data-gmap-lat="40.6700" data-gmap-lon="-73.9400" data-gmap-zoom="8" data-gmap-title="Evan Winston" data-gmap-marker="static/img/assets/gmap/marker.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="section-contact__wrapper-contacts">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 section-contact__wrapper-contact">
+                                    <div class="figure-contact">
+                                        <div class="figure-contact__icon">near_me</div>
+                                        <div class="figure-contact__item">San Francisco, CA</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 section-contact__wrapper-contact">
+                                    <div class="figure-contact">
+                                        <div class="figure-contact__icon">phone</div>
+                                        <div class="figure-contact__item">+1 (305) 606-2762</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 section-contact__wrapper-contact">
+                                    <div class="figure-contact">
+                                        <div class="figure-contact__icon">mail</div>
+                                        <div class="figure-contact__item"><a href="#">evanw89@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section CONTACT -->
+            </main>
+            <!-- PAGE FOOTER -->
+            <footer class="footer site-footer">
+                <div class="container-fluid">
+                    <div class="footer__inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center footer__column order-lg-2">
+                                <a class="logo" href="index.html">
+                                    <div class="logo__text">Irrelevant</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 text-right footer__column order-lg-3">
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a class="fa fab fa-facebook-f" href="https://www.facebook.com/irrelevantevan" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="fa fab fa-twitter" href="https://twitter.com/irrelevantevan" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="fa fab fa-instagram" href="https://www.instagram.com/irrelevantevan/" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="fa fab fa-behance" href="https://www.behance.net/evanw8981dc" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+<!--                                <li class="social__item">
+                                        <a class="fa fab fa-github" href="https://github.com/evanw89" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li> -->
+                                    <li class="social__item">
+                                        <a class="fa fab fa-linkedin" href="https://www.linkedin.com/in/evan-winston-750090b7/" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 text-left footer__column order-lg-1"><small>© 2018 Irrelevant - a plucky San Francisco solopreneur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- - PAGE FOOTER -->
+        </div>
+        <script src="static/js/separate-js/modernizr.custom.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArW7jnLU4wdvZGxBMN1jNXAq5dBxVBt4U"></script>
+        <!-- VENDOR SCRIPTS -->
+        <script src="static/js/vendor.min.js"></script>
+        <!-- - VENDOR SCRIPTS -->
+        <!-- COMPONENTS -->
+        <script src="static/js/components.js"></script>
+        <!-- - COMPONENTS -->
+        <!-- INIT COMPONENTS-->
+        <script src="static/js/separate-js/common.js"></script>
+        <!-- - INIT COMPONENTS-->
+        <!-- PAGE SCRIPTS-->
+        <!-- - PAGE SCRIPTS-->
+    </body>
+
+</html>

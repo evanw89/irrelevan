@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Irrelevant - Why HTML, CSS, and JS?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta name="HandheldFriendly" content="true" />
+        <link rel="stylesheet" href="static/css/separate-css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" href="static/css/separate-css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="static/css/separate-css/swiper.min.css" />
+        <link rel="stylesheet" href="static/css/separate-css/linear-icons.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons%7CPoppins:300,300i,400,400i,600,600i%7CPlayfair+Display:400i" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" />
+        <link rel="stylesheet" href="static/css/main.min.css" />
+        <!-- ICONS-->
+        <link rel="apple-touch-icon" sizes="57x57" href="static/img/content/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="static/img/content/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="static/img/content/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="static/img/content/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="static/img/content/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="static/img/content/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="static/img/content/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="static/img/content/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="static/img/content/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="static/img/content/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="static/img/content/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="static/img/content/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="static/img/content/favicon-16x16.png" />
+        <link rel="manifest" href="static/img/content/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="static/img/content/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" type="image/x-icon" href="static/img/content/favicon.ico" />
+    </head>
+
+    <body>
+        <!-- PAGE PRELOADER -->
+        <div class="preloader">
+            <div class="preloader__curtain bg-light"></div>
+            <div class="preloader__wrapper-logo">
+                <div class="preloader__logo">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g fill="none" fill-rule="evenodd">
+                            <rect class="rect" width="100%" height="100%"></rect>
+                        </g>
+                    </svg>
+                    <div class="logo">
+                        <div class="logo__text">Irrelevant</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- - PAGE PRELOADER -->
+        <div class="page-wrapper">
+            <!-- PAGE HEADER -->
+            <header class="header site-header js-header-sticky header_dark">
+                <div class="container-fluid">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <a class="logo" href="index.html">
+                                <div class="logo__text">Irrelevant</div>
+                            </a>
+                        </div>
+
+
+
+
+                        <div class="col-auto d-xl-block d-none">
+                            <ul class="menu">
+                                <li class="menu-item-has-children"><a href="#">Homepages</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Landing Page</a>
+                                        </li>
+                                        <li><a href="homepage-slider-1.html">Fullscreen Slider 1</a>
+                                        </li>
+                                        <li><a href="homepage-slider-4-light.html">Fullscreen Slider 4 &lt;Light&gt;</a>
+                                        </li>
+                                        <li><a href="homepage-slider-4-dark.html">Fullscreen Slider 4 &lt;Dark&gt;</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">Inner Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li><a href="service-details.html">Service Details</a>
+                                        </li>
+                                        <li><a href="team.html">Team</a>
+                                        </li>
+                                        <li><a href="404.html">404 Page</a>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="#">Submenu Depth Test</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item-has-children"><a href="#">Depth 2</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item-has-children"><a href="#">Depth 3</a>
+                                                            <ul class="sub-menu">
+                                                                <li class="menu-item-has-children"><a href="#">Depth 4</a>
+                                                                    <ul class="sub-menu">
+                                                                        <li><a href="#">Depth 5</a>
+                                                                        </li>
+                                                                        <li><a href="#">Depth 5</a>
+                                                                        </li>
+                                                                        <li><a href="#">Depth 5</a>
+                                                                        </li>
+                                                                        <li><a href="#">Depth 5</a>
+                                                                        </li>
+                                                                        <li><a href="#">Depth 5</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a href="#">Depth 4</a>
+                                                                </li>
+                                                                <li><a href="#">Depth 4</a>
+                                                                </li>
+                                                                <li><a href="#">Depth 4</a>
+                                                                </li>
+                                                                <li><a href="#">Depth 4</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#">Depth 3</a>
+                                                        </li>
+                                                        <li><a href="#">Depth 3</a>
+                                                        </li>
+                                                        <li><a href="#">Depth 3</a>
+                                                        </li>
+                                                        <li><a href="#">Depth 3</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Depth 2</a>
+                                                </li>
+                                                <li><a href="#">Depth 2</a>
+                                                </li>
+                                                <li><a href="#">Depth 2</a>
+                                                </li>
+                                                <li><a href="#">Depth 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">Portfolio</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="portfolio-grid.html">Portfolio Grid</a>
+                                        </li>
+                                        <li><a href="portfolio-details-1-light.html">Portfolio Details 1 &lt;Light&gt;</a>
+                                        </li>
+                                        <li><a href="portfolio-details-1-dark.html">Portfolio Details 1 &lt;Dark&gt;</a>
+                                        </li>
+                                        <li><a href="portfolio-details-2-light.html">Portfolio Details 2 &lt;Light&gt;</a>
+                                        </li>
+                                        <li><a href="portfolio-details-2-dark.html">Portfolio Details 2 &lt;Dark&gt;</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="services.html">Services</a>
+                                </li>
+                                <li><a href="blog-list.html">Blog</a>
+                                </li>
+                                <li><a href="about.html">About</a>
+                                </li>
+                                <li><a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__overlay-menu-back d-xl-none js-submenu-back">keyboard_arrow_up</div>
+                        <div class="col-auto d-xl-none">
+                            <div class="burger js-burger">
+                                <div class="burger__line"></div>
+                                <div class="burger__line"></div>
+                                <div class="burger__line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper-overlay-menu d-xl-none">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <ul class="overlay-menu js-overlay-menu">
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">01</div><span>Homepages</span>
+                                            </div>
+                                        </a>
+                                        <ul class="overlay-sub-menu">
+                                            <li>
+                                                <a href="index.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Landing Page</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="homepage-slider-1.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Fullscreen Slider 1</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="homepage-slider-4-light.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Fullscreen Slider 4 &lt;Light&gt;</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="homepage-slider-4-dark.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Fullscreen Slider 4 &lt;Dark&gt;</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">02</div><span>Inner Pages</span>
+                                            </div>
+                                        </a>
+                                        <ul class="overlay-sub-menu">
+                                            <li>
+                                                <a href="pricing.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Pricing</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="service-details.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Service Details</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="team.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Team</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="404.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>404 Page</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="#">
+                                                    <div class="overlay-menu__item-wrapper"><span>Submenu Depth Test</span>
+                                                    </div>
+                                                </a>
+                                                <ul class="overlay-sub-menu">
+                                                    <li class="menu-item-has-children">
+                                                        <a href="#">
+                                                            <div class="overlay-menu__item-wrapper"><span>Depth 2</span>
+                                                            </div>
+                                                        </a>
+                                                        <ul class="overlay-sub-menu">
+                                                            <li class="menu-item-has-children">
+                                                                <a href="#">
+                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 3</span>
+                                                                    </div>
+                                                                </a>
+                                                                <ul class="overlay-sub-menu">
+                                                                    <li class="menu-item-has-children">
+                                                                        <a href="#">
+                                                                            <div class="overlay-menu__item-wrapper"><span>Depth 4</span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <ul class="overlay-sub-menu">
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 5</span>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 5</span>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 5</span>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 5</span>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 5</span>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <div class="overlay-menu__item-wrapper"><span>Depth 4</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <div class="overlay-menu__item-wrapper"><span>Depth 4</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <div class="overlay-menu__item-wrapper"><span>Depth 4</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <div class="overlay-menu__item-wrapper"><span>Depth 4</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 3</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 3</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 3</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="overlay-menu__item-wrapper"><span>Depth 3</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="overlay-menu__item-wrapper"><span>Depth 2</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="overlay-menu__item-wrapper"><span>Depth 2</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="overlay-menu__item-wrapper"><span>Depth 2</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="overlay-menu__item-wrapper"><span>Depth 2</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">03</div><span>Portfolio</span>
+                                            </div>
+                                        </a>
+                                        <ul class="overlay-sub-menu">
+                                            <li>
+                                                <a href="portfolio-grid.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Portfolio Grid</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-details-1-light.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Portfolio Details 1 &lt;Light&gt;</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-details-1-dark.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Portfolio Details 1 &lt;Dark&gt;</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-details-2-light.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Portfolio Details 2 &lt;Light&gt;</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-details-2-dark.html">
+                                                    <div class="overlay-menu__item-wrapper"><span>Portfolio Details 2 &lt;Dark&gt;</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">04</div><span>Services</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-list.html">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">05</div><span>Blog</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">06</div><span>About</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <div class="overlay-menu__item-wrapper">
+                                                <div class="overlay-menu__item-line"></div>
+                                                <div class="overlay-menu__item-counter">07</div><span>Contact</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+
+
+            <!-- section MASTHEAD -->
+            <section class="section section-masthead section_pt section_pb bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="section-masthead__meta">
+                                <ul class="post-meta">
+                                    <li><a href="#">13 June</a>
+                                    </li>
+                                    <li><a href="#">Development</a>
+                                    </li>
+                                    <li><a href="#">By Irrelevant Evan</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h1>Why HTML, CSS, & JavaScript?</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-masthead__line"></div>
+            </section>
+            <!-- - section MASTHEAD -->
+            <!-- - PAGE HEADER -->
+            <main class="site-main">
+                <!-- section BLOG -->
+                <!-- post featured img -->
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col">
+                            <img src="static/img/content/posts/why-html-css-js.png" alt="Impostor Syndrome" />
+                        </div>
+                    </div>
+                </div>
+                <!-- - post featured img -->
+                <section class="section section_mt section_mb-small section-blog section-blog_featured-img">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-8" style="margin: auto">
+                                <div class="section-blog__wrapper-post">
+                                    <article class="post">
+                                        <div class="post__content">
+                                            <p>(Cross-posted in one part on <a href="http://codifyacademy.com/learn/why-html-css-javascript/" target="_blank">Codify Academy's online learning platform</a>.)
+                                            <p>You want to learn to code, but have no idea where to start. There’s an alphabet soup of languages out there, each living in their own niche somewhere. You don’t know what each language is for — how can you, if you can’t read code and don’t know the right questions to ask?</p>
+                                            <p>It can seem like a catch-22, where you need to know everything already in order to even identify where to start learning.</p>
+                                            <p>So, for those of you looking for an answer, stop right now and learn HTML, CSS, and JavaScript, preferably in that order.</p>
+                                            <p>For those of you looking for more — who want, you know, REASONS — put your hands down and sit tight, I’ll get to you.</p>
+                                            <p>Learning to code is a great idea at any point in your life, but it’s a very loose idea. Learning to code should be informed by some kind of goal, in the same way that people don’t try to learn “how to make art.” They learn how to draw, or how to paint, or how to paint portraits, or how to draw comics. Similarly, you should set yourself some kind of objective to help guide your learning. Are you learning to code because you want to make a video game? Do you want to be able to create your own portfolio site?</p>
+                                            <blockquote>
+                                                <p>You want to learn to code, but have no idea where to start. Learn HTML, CSS, and JavaScript, preferably in that order.</p>
+                                            </blockquote>
+                                            <p>Even if your objective is loftier (such as learning to code to find a higher-paying job or to pivot to a more satisfying career), it should come with additional focus. Let’s say you are looking for a higher-paying job. Can you identify the lowest-hanging fruit? Is your goal to make a life change quickly, in which case you should look for the most easily-digested, but solid, foundation? Or is your goal to build towards a life change over a few years, in which case maybe you want to try to aim a little higher and identify the most widespread and essential programming language?</p>
+                                            <p>In either case, the answer is the same: start with HTML, CSS, and JavaScript.</p>
+                                            <p>Before I go any further, let me just lay out what these languages are for and what they do. At their simplest, these languages are responsible for creating and driving all browser-based web content (websites). At their most complicated, these languages are the foundation for all web applications, and often power mobile and desktop applications as well (think programs or apps which you open OUTSIDE of your browser, actually stored on your device). Non-browser apps are where we start to get into a bit of a grey area, but these languages are still capable and popular players in the field, and the skills involved easily translate to their alternatives.</p>
+                                            <p>More specifically, HTML lays out the bones of a website; the architecture, scaffolding, frame, what have you. CSS lays out the skin of a website, styling those bones so they look just right, are positioned just right, are the correct color and font, and respond in the correct way across multiple devices (such as from a large desktop screen to a small mobile screen). JavaScript is the muscle, creating the logic and interactive flow of your site. JS is what allows things to change and evolve as users interact with your site, triggering animations and transitions, and changing the information visible to a user based on a user’s actions or position on your site.</p>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <img src="http://codifyacademy.com/learn/wp-content/uploads/2018/06/fontback-768x355.png" alt="" style="object-fit: cover;"/>
+                                                </div>
+                                            </div>
+                                            <p>Coding is most easily split between two fields: front-end and back-end. Front-end involves planning, building, and designing the user-facing aspects of a website or application — what we see when we open Pinterest or Uber or even a simple Google search. Back-end involves the communication of data between servers and from server to website, in a nutshell. In other words, when you perform a Google search, back-end language is responsible for fetching all those search results from servers far away and delivering them to your browser, while front-end language processes all of that data and converts it into readable, easily digestible, recognizable, and even visually appealing search results which we click on to access more information.</p>
+                                            <p>If your aim is to become a back-end developer, it is very possible to proceed without learning HTML, CSS, and JavaScript, but you would be doing yourself a disservice. Understanding how the information you’re sending will ultimately need to be repackaged makes you a uniquely capable back-end developer, capable of bringing more value to a team, and JavaScript in its own right  involves plenty of the hard skills which make for a solid back-end developer.</p>
+                                            <p>If your aim is front-end development (what we teach here at Codify), then HTML, CSS, and JavaScript are your bread and butter. You can quickly learn what you need to to get off the ground running with HTML and CSS. Within weeks, you could be building custom websites for small businesses, or building and selling theme sites (website templates which people can download and adapt for their own purposes). Mastering them will take some real mileage, of course, but the barrier for entry with HTML and CSS is quite low and there are plenty of resources out there for learning on your own (although nothing beats the hands-on guidance of a mentor). JavaScript then opens up an unlimited number of doors for you, allowing for full web applications, browser-based games, communication and integration with other services via APIs (such as Google Maps), and even enterprise-level business logic. Want to create a Yelp-like service just for NorCal campgrounds? You can! Want to create the Rotten Tomatoes of tabletop gaming? You can! Want to just create a killer interactive portfolio site or store page? Do it!</p>
+                                            <p>Note that JavaScript is considerably more complex than HTML and CSS, all else being equal, and tends to present the greatest learning curve for new front-enders, but that by no means makes it inaccessible. With the right motivation and time invested, you’d be shocked at how much you can learn and accomplish in a relatively short period of time.</p>
+                                            <p>Now for the Negative Nancy’s who come to me with comments like “All I hear about nowadays is React or Python! I don’t want to be wasting my time on the wrong language!”, that’s a fair point. I don’t want you to waste your time any more than you want to waste it. But you won’t be.</p>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="https://images.unsplash.com/photo-1533906966484-a9c978a3f090?ixlib=rb-0.3.5&s=59ddf221c1df3de54b82d4a54d368a47&auto=format&fit=crop&w=802&q=80" alt="" style="height: 466.66px; object-fit: cover;"/>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="alignnone wp-image-640 size-large" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" style="height: 466.66px; object-fit: cover;"/>
+                                                </div>
+                                            </div>
+                                            <p>React is a framework built on top of HTML, CSS, and JavaScript. In a very simplified nutshell, what React allows us to do is to write all three of these languages at once, and to organize all of the pieces of our site in a more intuitive and easily managed fashion. When you create a website with React, for example, the browser spins it up, and with the help of compilers and transpilers, CONVERTS all that React code you’ve written into regular ol’ HTML, CSS, and JavaScript. Trying to learn React without these three is like trying to learn to read French without knowing the 26-letter alphabet.</p>
+                                            <p>Python is a horse of a different color. It’s a back-end language which plain and simply CANNOT do what HTML and CSS do. You can’t craft the front-end of a website or application using Python. Period. You can write and generate HTML inside of Python, but if you don’t know HTML… you see where I’m going with this? Python can replace JavaScript in most cases, but at its core JavaScript is just more suited for web browsers for a variety of reasons. Python and React are EXCELLENT skills for a professional developer to possess, but they are NOT starting points and are NOT part of the critical fundamentals.</p>
+                                            <p>So, what are you waiting for? Codecademy is a great, free place to start if you want to get a jump on HTML, CSS, and JavaScript. W3Schools also has a series of great tutorials. At the end of the day, if this is something you truly wish to pursue, you’re going to need to bring your a-game, your grit, and your determination to keep yourself motivated, CHALLENGED, and on-task. If you’re not sure how, reach out!</p>
+                                        </div>
+                                        <div class="post__tags">
+                                            <div class="tagcloud">
+                                                <ul>
+                                                    <li><a class="tag-cloud-link" href="#">Development</a>
+                                                    </li>
+                                                    <li><a class="tag-cloud-link" href="#">Creative</a>
+                                                    </li>
+                                                    <li><a class="tag-cloud-link" href="#">Learn to Code</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="section-blog__wrapper-comments">
+                                    
+                                    <div class="comment-respond">
+                                        <h2 class="comment-reply-title">Add comment</h2>
+                                        <form class="form" action="index.html" method="POST">
+                                            <div class="row form__row">
+                                                <div class="col-lg-6 form__col">
+                                                    <label class="input-float js-input-float">
+                                                        <input class="input-float__input" type="text" /><span class="input-float__label">Your Name</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-6 form__col">
+                                                    <label class="input-float js-input-float">
+                                                        <input class="input-float__input" type="email" /><span class="input-float__label">Your E-mail</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row form__row">
+                                                <div class="col form__col">
+                                                    <label class="input-float js-input-float">
+                                                        <textarea class="input-float__input input-float__input_textarea"></textarea><span class="input-float__label">Your Comment</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row form__row form__row_submit text-right">
+                                                <div class="col form__col form__col_submit">
+                                                    <button class="button button_accent" type="submit"><span>Post Comment</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section BLOG -->
+            </main>
+            <!-- PAGE FOOTER -->
+            <footer class="footer site-footer">
+                <div class="container-fluid">
+                    <div class="footer__inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center footer__column order-lg-2">
+                                <a class="logo" href="index.html">
+                                    <div class="logo__text">Irrelevant</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 text-right footer__column order-lg-3">
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a class="fa fab fa-facebook-f" href="https://www.facebook.com/irrelevantevan" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="fa fab fa-twitter" href="https://twitter.com/irrelevantevan" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="fa fab fa-instagram" href="https://www.instagram.com/irrelevantevan/" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="fa fab fa-behance" href="https://www.behance.net/evanw8981dc" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+<!--                                <li class="social__item">
+                                        <a class="fa fab fa-github" href="https://github.com/evanw89" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li> -->
+                                    <li class="social__item">
+                                        <a class="fa fab fa-linkedin" href="https://www.linkedin.com/in/evan-winston-750090b7/" target="_blank">
+                                            <svg viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-134.000000, -98.000000)">
+                                                        <path class="circle" d="M135,174a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 text-left footer__column order-lg-1"><small>© 2018 Irrelevant - a plucky San Francisco solopreneur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- - PAGE FOOTER -->
+        </div>
+        <script src="static/js/separate-js/modernizr.custom.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArW7jnLU4wdvZGxBMN1jNXAq5dBxVBt4U"></script>
+        <!-- VENDOR SCRIPTS -->
+        <script src="static/js/vendor.min.js"></script>
+        <!-- - VENDOR SCRIPTS -->
+        <!-- COMPONENTS -->
+        <script src="static/js/components.min.js"></script>
+        <!-- - COMPONENTS -->
+        <!-- INIT COMPONENTS-->
+        <script src="static/js/separate-js/common.js"></script>
+        <!-- - INIT COMPONENTS-->
+        <!-- PAGE SCRIPTS-->
+        <!-- - PAGE SCRIPTS-->
+    </body>
+
+</html>
