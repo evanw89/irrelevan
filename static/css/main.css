@@ -1224,11 +1224,24 @@ blockquote cite:before {
   font-size: 18px;
   line-height: 1.44;
 }
+.figure-info__value span {
+  display: inline-block;
+  margin-right: 15px;
+}
 
 @media only screen and (max-width: 991px) {
   .figure-info__option {
     margin-bottom: 2px;
   }
+}
+@media only screen and (max-width: 768px) {
+  .figure-info__value span {
+    display: block;
+  }
+  .figure-info__value span.d-sm-none {
+    display: none;
+  }
+
 }
 
 /* ======================================================================== */
@@ -3667,6 +3680,10 @@ a.logo:hover {
   text-align: center;
   margin-top: 80px;
 }
+.section-contact .contact-image {
+  background-color: #1d202b; 
+  padding: 60px;
+}
 
 @media only screen and (max-width: 1400px) {
   .section-contact__wrapper-form {
@@ -3687,7 +3704,13 @@ a.logo:hover {
     text-align: left;
   }
   .section-contact__wrapper-form {
-    padding: 40px 30px;
+    padding: 45px;
+  }
+  .section-contact .contact-image {
+    padding: 0;
+  }
+  .section-contact img {
+    display: none;
   }
 }
 
